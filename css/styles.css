@@ -1,0 +1,281 @@
+/* Improt for Roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  --bg-primary: #37393a;
+  --bg-secondary: #2959df;
+  --font-primary: #e8eef2;
+  --font-secondary: #d6c9c9;
+  --backup-color: #c7d3dd;
+  --backup-color-2: rgb(255, 82, 82);
+}
+
+body {
+  height: 100vh;
+  background: var(--bg-primary);
+}
+
+/* style navbar */
+body header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 50px; /* 0px top-bottom 50px left-right*/
+}
+
+.logo {
+  color: var(--bg-secondary);
+  font-size: 26px;
+}
+
+body header nav ul a {
+  text-decoration: none;
+  color: var(--font-primary);
+  font-weight: 500;
+  transition: color 0.2s ease;
+  margin-right: 20px;
+}
+
+body header nav a:hover {
+  color: var(--bg-secondary);
+}
+
+.contact-btn {
+  padding: 8px 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  background: var(--bg-secondary);
+  color: aliceblue;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: var(--backup-color-2);
+  color: var(--font-primary);
+}
+
+body header h1 {
+  display: flex;
+  justify-content: center;
+  color: var(--font-primary);
+  margin: 38px;
+}
+
+main .headshot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  gap: 42px;
+}
+
+main .headshot img {
+  width: 200px;
+  border-radius: 20%;
+  margin-left: 20px;
+}
+
+main .headshot p {
+  color: var(--font-primary);
+  width: 300px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+main .bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+main .bio p {
+  background: var(--font-primary);
+  color: black;
+  padding: 20px;
+  width: 700px;
+  border-radius: 12px;
+}
+
+main .degree-prog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 50px;
+}
+
+main .degree-prog label {
+  font-size: 32px;
+  color: var(--font-primary);
+  font-weight: 600;
+}
+
+main .degree-prog progress {
+  width: 500px;
+}
+
+
+footer hr {
+  border: none;
+}
+
+footer .footer-info {
+  background-color: var(--bg-secondary);
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+footer .footer-info p {
+  color: var(--font-primary);
+  font-weight: 500;
+}
+
+footer .footer-info a {
+  color: var(--font-primary);
+  transition: color 0.2s ease;
+}
+
+footer .footer-info a:hover {
+  color: var(--bg-primary);
+}
+
+.resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .resume-info {
+    background: var(--font-primary);
+    color: black;
+    padding: 20px;
+    width: 700px;
+    border-radius: 12px;
+    margin: 50px 0px 120px;
+}
+
+main section{
+    margin-bottom: 12px;
+}
+
+main .resume-info .contact-info ul li{
+    list-style-type: none;
+}
+
+main .resume-info .pro-exp h4{
+    margin-top: 8px;
+}
+
+main .resume-info .edu-exp h3{
+    margin-bottom: 8px;
+}
+
+main .resume-info .edu-exp table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+main .resume-info .edu-exp table tr td{
+    padding: 5px;
+}
+
+.fun-facts .book {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 60px;
+}
+
+.fun-facts .book h2 {
+    color: var(--font-primary);
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+/* .fun-facts .book div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+} */
+
+.fun-facts .book img {
+    width: 300px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.fun-facts .book p {
+    background-color: var(--font-primary);
+    color: black;
+    border-radius: 8px;
+    font-size: 19px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.fun-facts .book a {
+    color: var(--bg-secondary);
+    font-size: 18px;
+    transition: color 0.2s ease
+}
+.fun-facts .book a:hover {
+    color: var(--backup-color-2);
+}
+
+.fun-facts .music {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.fun-facts .music h2 {
+    color: var(--font-primary);
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.fun-facts .music audio {
+    margin-bottom: 20px;
+}
+
+.fun-facts .music a {
+    color: var(--bg-secondary);
+    font-size: 18px;
+    transition: color 0.2s ease
+}
+.fun-facts .music a:hover {
+    color: var(--backup-color-2);
+}
+
+.fun-facts .movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.fun-facts .movie h2 {
+    color: var(--font-primary);
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+
+
